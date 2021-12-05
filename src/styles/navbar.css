@@ -1,9 +1,12 @@
 .nav-container {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   height: 70px;
   background-color: #000022;
+  width: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 a.navbar {
@@ -33,5 +36,17 @@ li.nav-list {
   margin-right: 0.5rem;
 }
 
+.nav-hamburger {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.nav-hamburger:hover {
+  color: purple;
+}
+
 @media screen and (max-width: 700px) {
+  .nav-list {
+    visibility: hidden;
+  }
 }

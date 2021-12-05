@@ -1,7 +1,25 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 
+import { FaBars, FaAngleDown } from "react-icons/fa";
+
 const NavBar = () => {
+  const [isMobileView, setIsMobileView] = useState(false);
+  const [isMobileViewActive, setIsMobileViewActive] = useState(true);
+
+  const setMobileMode = () => {
+    if (window.innerWidth <= 700) {
+      setIsMobileView(true);
+    } else {
+      setIsMobileView(false);
+    }
+  };
+
+  useEffect(() => {
+    setMobileMode();
+    window.addEventListener("resize", setMobileMode);
+  }, []);
+
   return (
     <>
       <nav className="nav-container">
@@ -27,6 +45,21 @@ const NavBar = () => {
             </li>
           </ul>
         </div>
+        {isMobileView ? (
+          <div>
+            {isMobileViewActive ? (
+              <FaBars
+                className="nav-hamburger"
+                onClick={() => setIsMobileViewActive(false)}
+              />
+            ) : (
+              <FaAngleDown
+                className="nav-hamburger"
+                onClick={() => setIsMobileViewActive(true)}
+              />
+            )}
+          </div>
+        ) : null}
       </nav>
     </>
   );
