@@ -1,0 +1,37 @@
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 70px;
+  background-color: #000022;
+}
+
+a.navbar {
+  text-decoration: none;
+  color: white;
+  user-select: none;
+}
+
+a.navbar:hover {
+  color: purple;
+  cursor: pointer;
+}
+
+.nav-text-logo {
+  font-family: "ZCOOL KuaiLe";
+  font-size: 2rem;
+  user-select: none;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+
+li.nav-list {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+@media screen and (max-width: 700px) {
+}
