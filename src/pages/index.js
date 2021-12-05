@@ -7,17 +7,16 @@ export default function Home() {
   return (
     <>
       <NavBar />
-      <div
+      <Image
         style={{
-          borderRadius: "360",
-          backgroundColor: "red",
+          borderRadius: "360px",
           border: "1rem solid white",
           borderRadius: "360px",
-          zIndex: "100000",
+          width: "15rem",
+          backgroundColor: "red",
         }}
-      >
-        <Image src={WilsonImage} />
-      </div>
+        src={WilsonImage}
+      />
     </>
   );
 }
