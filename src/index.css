@@ -1,0 +1,50 @@
+html,
+body {
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14pt;
+    color: #211f22
+}
+
+.main-background-block {
+    background-color: #fc9045;
+    height: 100vh
+}
+
+.main-hero {
+    /* border: red 1px solid; */
+    padding: 20px;
+}
+
+h1 {
+    padding: 0;
+    margin: 0;
+    color: #fefdef;
+    font-weight: 1000;
+    font-size: 50pt;
+    text-rendering: optimizeLegibility;
+    padding-bottom: 20px;
+}
+
+ul.plain {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: fit-content;
+}
+
+ul.plain>li:hover {
+    color: #fefdef;
+    transition: 150ms;
+}
+
+li {
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+rect.purple {
+    fill: transparent;
+    stroke: #211f22;
+    stroke-width: 2px;
+}
